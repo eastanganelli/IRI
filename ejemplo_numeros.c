@@ -7,8 +7,6 @@
 #define MIN 0
 #define AVG(x,y) ((float)x/y)
 
-enum booleano { VERDADERO = 0, FALSO = 1 };
-
 int es_mayor(int nums[N]);
 int es_minimo(int nums[N]);
 void es_min_max(int nums[N], int* min, int* max);
