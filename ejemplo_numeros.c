@@ -88,7 +88,7 @@ int es_minimo(int nums[N]) {
 * min: valor puntero y retorna como puntero
 * max: valor puntero y retorna como puntero
 *
-* Return: void
+* Return: void, y Minimo/Máximo via punteros
 */
 void es_min_max(int nums[N], int* min, int* max) {
     int i = 0, min_ = -1, max_ = -1;
