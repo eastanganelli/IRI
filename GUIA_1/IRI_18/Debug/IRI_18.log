@@ -1,0 +1,5 @@
+﻿  main.cpp
+  monedas.cpp
+F:\ezequ\Projects\IRI_18\monedas.cpp(7,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Generating Code...
+  IRI_18.vcxproj -> F:\ezequ\Projects\IRI_18\Debug\IRI_18.exe

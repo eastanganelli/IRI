@@ -1,0 +1,8 @@
+﻿  main.cpp
+  numeros.cpp
+F:\ezequ\Projects\IRI_2021\DEMO_DEBUG_UNIT\DEMO_DEBUG\numeros.cpp(7,19): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+F:\ezequ\Projects\IRI_2021\DEMO_DEBUG_UNIT\DEMO_DEBUG\numeros.cpp(16,14): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+F:\ezequ\Projects\IRI_2021\DEMO_DEBUG_UNIT\DEMO_DEBUG\numeros.cpp(25,16): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+F:\ezequ\Projects\IRI_2021\DEMO_DEBUG_UNIT\DEMO_DEBUG\numeros.cpp(34,27): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  Generating Code...
+  DEMO_DEBUG.vcxproj -> F:\ezequ\Projects\IRI_2021\DEMO_DEBUG_UNIT\Debug\DEMO_DEBUG.exe
