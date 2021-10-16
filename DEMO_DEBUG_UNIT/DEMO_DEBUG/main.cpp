@@ -1,16 +1,40 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
+#include <string.h>
 #include "numeros.h"
+#define max 6
+#define min 3
+
+char preguntasGBL[15][22] = {
+    { "Preguntas numero 1" },
+    { "Preguntas numero 2" },
+    { "Preguntas numero 3" },
+    { "Preguntas numero 4" },
+    { "Preguntas numero 5" },
+    { "Preguntas numero 6" },
+    { "Preguntas numero 7" },
+    { "Preguntas numero 8" },
+    { "Preguntas numero 9" },
+    { "Preguntas numero 10" },
+    { "Preguntas numero 11" },
+    { "Preguntas numero 12" },
+    { "Preguntas numero 13" },
+    { "Preguntas numero 14" },
+    { "Preguntas numero 15" }
+};
 
 using namespace std;
 
-int main(int argc, char* argv[])
-{
-    /*cout << "You have entered " << argc << " arguments:" << "\n";
+int main(int argc, char* argv[]) {
+
+    cout << "You have entered " << argc << " arguments:" << "\n";
 
     for (int i = 0; i < argc; ++i)
-        cout << argv[i] << "\n";*/
+        cout << argv[i] << "\n";
 
     int selector = stoi(argv[1]);
+
+    int selector = 1;
 
     switch (selector) {
         case 1: {
