@@ -1,30 +1,24 @@
 #include "gblheader.h"
 
-enum booleano { FALSO, VERDADERO };
-typedef enum booleano eBool;
+enum booleano { FALSO = 0, VERDADERO = 1 };
+typedef enum booleano eBooleano;
 
-eBool existe_archivo(char* path) {
-	//Le paso al fopen la ruta del archivo
-	//Si al tratar de leer el archivo no puede,
-	//devolverá NULL, sino un puntero tipo FILE
-	FILE* archivo = fopen(path, "r+");
-	
-	if (archivo == NULL)
-		//Si puedo abrir el archivo
-		return VERDADERO;
+enum modo_archivo { LEC, ESCRI, APPEND, LECBIN, ESCRIBIN, APPENDBIN };
+typedef enum modo_archivo eModo_Archivo;
 
-	//No puedo abrir el archivo
-	return FALSO;
-}
+char modosFile[9][4] = {
+	"r+", "w+", "a+", "rb+", "wb+", "ab+"
+};
 
-FILE* abrir_archivo(char* path, char modo[5]) {
+FILE* abrir_archivo(char* path, eModo_Archivo modo) {
 	//Le paso al fopen la ruta del archivo
 	//Y el modo r, w, a, r+, w+, a+
 	//OJO si apren con w/w+, van a crear un archivo
 	//y si el mismo ya existía, lo van a sobreescribir,
 	//es decir, van a borrar los datos anteriormente escritos
 	//https://www.cplusplus.com/reference/cstdio/fopen/
-	FILE* archivo = fopen(path, modo);
+	//FILE* archivo = fopen(path, modo);
+	FILE* archivo = fopen(path, modosFile[modo]);
 	return archivo;
 }
 
