@@ -86,7 +86,7 @@ ptrEmpleado leer_datos_empleados(FILE* csvEmpleados, int* tam_total) {
         // El %s no se puede usar para leer el archivo ya que el mismo leerá
         // hasta el espacio que encuentre, para evitar este problema utilizaremos %[^,].
         // El %[^,] leerá hasta toparse con la ' , '.
-        fscanf(csvEmpleados, "%d,%[^,],%[^,],%d", &aux.dni, &aux.nombreYApellido, &aux.fecNac, &aux.posicion);
+        (void)fscanf(csvEmpleados, "%d,%[^,],%[^,],%d", &aux.dni, &aux.nombreYApellido, &aux.fecNac, &aux.posicion);
 
         // Asignamos los datos que levantamos del archivo
         // en nuestro lista y su posición correspondiente
@@ -113,7 +113,7 @@ void buscar_linea_con_DNI_modificar(FILE* csvEmpleado, int dni) {
     int buscar_dni = -1, posicion = 0;
     while (!feof(csvEmpleado)) {
         posicion = ftell(csvEmpleado);
-        fscanf(csvEmpleado, "%d,", &buscar_dni);
+        (void)fscanf(csvEmpleado, "%d,", &buscar_dni);
         if (buscar_dni == dni) {
             fseek(csvEmpleado, 0, posicion);
             break;

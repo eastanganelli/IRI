@@ -57,7 +57,7 @@ int main() {
         {
             int seleccion = -1;
             printf("\n1: Agregar\t2: Modificar\t3: Eliminar\t0: Salir -> ");
-            scanf("%d", &seleccion);
+            (void)scanf("%d", &seleccion);
             switch (seleccion) {
                 case 1: {
                     ptrEmpleado nuevoEmpleado = NULL;
@@ -92,7 +92,7 @@ int main() {
                 case 3: {
                     int dni = -1;
                     printf("\nIngrese DNI del Empleado que desea eliminar: ");
-                    scanf("%d", &dni);
+                    (void)scanf("%d", &dni);
 
                     eBooleano existeEmpleado = existe_empleado(ListaEmpleados, largoEmpleados, dni);
 
@@ -165,13 +165,13 @@ ptrEmpleado anyadir_empleado() {
     if (aux != NULL) {
         system("cls");
         printf("\nIngresar DNI:\t");
-        scanf("%d%*c", &aux->dni);
+        (void)scanf("%d%*c", &aux->dni);
         printf("\nIngresar Nombre y Apellido:\t");
         gets_s(aux->nombreYApellido, 85);
         printf("\nIngresar Fecha nacimiento: [Formato: dd/mm/aaaa]\t");
         gets_s(aux->fecNac, 11);
         printf("\nIngresar Posicion:\t");
-        scanf("%d", &aux->posicion);
+        (void)scanf("%d", &aux->posicion);
     }
     return aux;
 }
@@ -181,7 +181,7 @@ int modificar_empleado(ptrEmpleado Listado, int tam) {
     int i = -1;
 
     printf("\nSeleccionar Empleado por DNI: ");
-    scanf("%d", &aux->dni);
+    (void)scanf("%d", &aux->dni);
 
     for (i = 0; i < tam; i++) {
         if (Listado[i].dni == aux->dni) {
@@ -191,7 +191,7 @@ int modificar_empleado(ptrEmpleado Listado, int tam) {
     }
 
     printf("\nIngrese la nueva posicion: ");
-    scanf("%d", &aux->posicion);
+    (void)scanf("%d", &aux->posicion);
 
     Listado[i] = *aux;
     delete aux;
