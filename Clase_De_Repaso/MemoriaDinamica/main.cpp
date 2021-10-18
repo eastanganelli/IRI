@@ -16,14 +16,14 @@ int main() {
     alto  = rand() % (MAX - MIN) + MIN;
     ancho = rand() % (MAX - MIN) + MIN;
     printf("Matriz Con New, Delete y memcpy\n");
-    { //Usando New, Delete y memcpy
+    { // Usando New, Delete y memcpy
         int** matriz = NULL;
         eMem ControlErrores = VACIO;
         matriz = crear_matrix_new(alto, ancho, &ControlErrores);
 
-        //Revisamos nuestra variable de control de errores
-        //Sino avisaremos al usuario y cerramos programa
-        //La misma se retorna por derecha y la matriz por izquierda
+        // Revisamos nuestra variable de control de errores
+        // Sino avisaremos al usuario y cerramos programa
+        // La misma se retorna por derecha y la matriz por izquierda
         if (ControlErrores == NOMEM) {
             printf("ERROR CREAR MEMORIA CON NEW");
             return -1;
@@ -46,12 +46,12 @@ int main() {
 
     printf("\n<----------------------------------------------------->\n\nMatriz Con Malloc, Calloc, Realloc y Free\n");
 
-    { //Usando Malloc, Calloc, Realloc y Free
+    { // Usando Malloc, Calloc, Realloc y Free
         int** matriz = NULL;
         matriz = crear_matrix_malloc(alto, ancho);
 
-        //Revisamos nuestra matriz no sea nula
-        //Sino avisaremos al usuario y cerramos programa
+        // Revisamos nuestra matriz no sea nula
+        // Sino avisaremos al usuario y cerramos programa
         if (matriz == NULL) {
             printf("ERROR CREAR MEMORIA CON MALLOC");
             return -1;
