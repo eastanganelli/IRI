@@ -62,11 +62,12 @@ ptrEmpleado leer_datos_empleados(FILE* csvEmpleados, int* tam) {
         fscanf(csvEmpleados, "%d,%[^,],%[^,],%d", &dni, &auxnomape, &auxfecnac, &posicion);
 
         //Cambiamos el tamaño del Listado
-        if(i <= i+1) {
+        if(i <= i) {
+            int largo = i + 1;
             //Esta explicado en el proyecto de ejemplo de
             //Memoria dinámica en el archivo de connew.h
-            ptrEmpleado aux = new sEmpleado[i+1];
-            memcpy(aux, Listado, sizeof(sEmpleado));
+            ptrEmpleado aux = new sEmpleado[largo];
+            memcpy(aux, Listado, sizeof(sEmpleado)*largo);
             delete[] Listado;
             Listado = aux;
         }
@@ -80,7 +81,7 @@ ptrEmpleado leer_datos_empleados(FILE* csvEmpleados, int* tam) {
     }
 
     //Devovlemos por derecha el tamaño de la Lista
-    *tam = i;
+    *tam = i-1;
 
     return Listado;
 }

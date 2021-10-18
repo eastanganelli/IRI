@@ -56,8 +56,10 @@ int main() {
 
 void imprimir_lista_empleados(ptrEmpleado Listado, int tam) {
     printf("\nImprimir lista de Empleados\n");
-    for (int i = 0; i < tam; i++)
-        printf("%d,%s,%s,%d\n", Listado[i].dni, Listado[i].nombreYApellido, Listado[i].fecNac, Listado[i].posicion);
+    for (int i = 0; i < tam; i++) {
+        sEmpleado aux = Listado[i];
+        printf("%d,%s,%s,%d\n", aux.dni, aux.nombreYApellido, aux.fecNac, aux.posicion);
+    }
 }
 
 void imprimir_db_empleados(ptrDB Listado, int tam) {
