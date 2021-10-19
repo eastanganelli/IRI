@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MemoriaDinamica", "MemoriaD
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Archivos", "Archivos\Archivos.vcxproj", "{E2DCB694-6DB4-4658-9192-7FCCAB1DA9BD}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Clase 2021-10-15", "Clase 2021-10-15\Clase 2021-10-15.vcxproj", "{9EA396F7-B964-4708-A6CF-2EEC7E21335B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{E2DCB694-6DB4-4658-9192-7FCCAB1DA9BD}.Release|x64.Build.0 = Release|x64
 		{E2DCB694-6DB4-4658-9192-7FCCAB1DA9BD}.Release|x86.ActiveCfg = Release|Win32
 		{E2DCB694-6DB4-4658-9192-7FCCAB1DA9BD}.Release|x86.Build.0 = Release|Win32
+		{9EA396F7-B964-4708-A6CF-2EEC7E21335B}.Debug|x64.ActiveCfg = Debug|x64
+		{9EA396F7-B964-4708-A6CF-2EEC7E21335B}.Debug|x64.Build.0 = Debug|x64
+		{9EA396F7-B964-4708-A6CF-2EEC7E21335B}.Debug|x86.ActiveCfg = Debug|Win32
+		{9EA396F7-B964-4708-A6CF-2EEC7E21335B}.Debug|x86.Build.0 = Debug|Win32
+		{9EA396F7-B964-4708-A6CF-2EEC7E21335B}.Release|x64.ActiveCfg = Release|x64
+		{9EA396F7-B964-4708-A6CF-2EEC7E21335B}.Release|x64.Build.0 = Release|x64
+		{9EA396F7-B964-4708-A6CF-2EEC7E21335B}.Release|x86.ActiveCfg = Release|Win32
+		{9EA396F7-B964-4708-A6CF-2EEC7E21335B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
