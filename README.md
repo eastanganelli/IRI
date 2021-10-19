@@ -5,7 +5,8 @@
 
 [Ejercicios Resueltos de la Guia](https://gitlab.com/FICEN_Students/ayudantia-iri-2021/-/tree/main/GUIA_Ejercicios_Resueltos)
 
-[Clase Repaso 15/10/2021](https://gitlab.com/FICEN_Students/ayudantia-iri-2021/-/tree/main/Clase_De_Repaso)
+[🖥️ Clase Repaso 15/10/2021](https://gitlab.com/FICEN_Students/ayudantia-iri-2021/-/tree/main/Clase_De_Repaso)
+[🎥 Grabación 15/10/2021](https://www.youtube.com/playlist?list=PLPDapGiZpQOM0ZSCklZhxAFLfNpk3jocJ)
 
 [Códigos de Ejemplo](https://gitlab.com/FICEN_Students/ayudantia-iri-2021/-/tree/main/EJEMPLOS)
  - [Punteros](https://gitlab.com/FICEN_Students/ayudantia-iri-2021/-/blob/main/EJEMPLOS/punteros.cpp)
