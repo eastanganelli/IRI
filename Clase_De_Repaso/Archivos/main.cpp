@@ -78,7 +78,7 @@ int main() {
                     int posicion = modificar_empleado(ListaEmpleados, largoEmpleados);
                     system("cls");
                     if (posicion != -1) {
-                        EmpleadosFile = abrir_archivo(pathEmpleados, ESCRI);
+                        EmpleadosFile = abrir_archivo(pathEmpleados, LEC);
                         modificar_dato_empleado(EmpleadosFile, ListaEmpleados, posicion);
                         cerrar_archivo(EmpleadosFile);
 

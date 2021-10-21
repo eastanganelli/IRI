@@ -110,12 +110,13 @@ ptrEmpleado leer_datos_empleados(FILE* csvEmpleados, int* tam_total) {
 // Documentación: http://www.cplusplus.com/reference/cstdio/fseek/
 // http://www.cplusplus.com/reference/cstdio/ftell/
 void buscar_linea_con_DNI_modificar(FILE* csvEmpleado, int dni) {
-    int buscar_dni = -1, posicion = 0;
+    sEmpleado aux = { 0, '\0', '\0', 0 };
+    fpos_t posicion;
     while (!feof(csvEmpleado)) {
-        posicion = ftell(csvEmpleado);
-        (void)fscanf(csvEmpleado, "%d,", &buscar_dni);
-        if (buscar_dni == dni) {
-            fseek(csvEmpleado, 0, posicion);
+        fgetpos(csvEmpleado, &posicion);
+        (void)fscanf(csvEmpleado, "%d, %[^,], %[^,], %d", &aux.dni, &aux.nombreYApellido, &aux.fecNac, &aux.posicion);
+        if (aux.dni == dni) {
+            fsetpos(csvEmpleado, &posicion);
             break;
         }
     }
@@ -126,5 +127,5 @@ void buscar_linea_con_DNI_modificar(FILE* csvEmpleado, int dni) {
 void modificar_dato_empleado(FILE* csvEmpleado, ptrEmpleado Listado, int pos) {
     buscar_linea_con_DNI_modificar(csvEmpleado, Listado[pos].dni);
     
-    fprintf(csvEmpleado, "%d,%s,%s,%d\n", Listado[pos].dni, Listado[pos].nombreYApellido, Listado[pos].fecNac, Listado[pos].posicion);
+    fprintf(csvEmpleado, "\n%d,%s,%s,%d", Listado[pos].dni, Listado[pos].nombreYApellido, Listado[pos].fecNac, Listado[pos].posicion);
 }
