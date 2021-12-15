@@ -52,6 +52,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "REPASO_2021_11_26", "REPASO
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Penco", "REPASO_2021_11_26\Penco.vcxproj", "{D4AAAD92-661D-46BA-A774-CA14B6E00004}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0A0CC335-DA61-407D-83F1-4AAF8FC266A3}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
