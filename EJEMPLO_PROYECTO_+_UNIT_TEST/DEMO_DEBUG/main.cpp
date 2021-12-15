@@ -34,7 +34,7 @@ int main(int argc, char* argv[]) {
 
     int selector = stoi(argv[1]);
 
-    int selector = 1;
+   // int selector = 1;
 
     switch (selector) {
         case 1: {
